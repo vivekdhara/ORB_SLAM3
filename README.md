@@ -92,14 +92,22 @@ For a monocular input from topic `/camera/image_raw` run node ORB_SLAM3/Mono. Yo
 # 5. Rosbag Joining + Data Generation
 Ther Accel, Magnetometer data are on seperate topics, this script will join all the rosbag fragments and join thesse two topics for the final dataset
     
-    ```
+    
     chmod +x build_ros.sh
     ./build_ros.sh
-        ```
+       
 Change the IN_PATH, OUT_PATH in bag_merge.sh. Will look at all the bags in the given folder.
 
 
+# 6. Pose Visualisation
+This script is for visualising the pose from KeyFrames.txt. In .yaml file use: 
+    
+    System.SaveAtlasToFile: "map_total"
 
 
+    chmod +x pose.py
+    ./pose.py
+       
+Mention setting of map in the file, filename
 
 
