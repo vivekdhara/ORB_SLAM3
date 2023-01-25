@@ -106,5 +106,5 @@ This script is for visualising the pose from KeyFrames.txt. In .yaml file use:
     python3 pose.py
        
 Mention setting of map in the file, filename
-
+500 Features with Segmentation Issues
 
