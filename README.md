@@ -71,7 +71,7 @@ and add at the end the following line. Replace PATH by the folder where you clon
   ./build_ros.sh
   ```
   
-### Running Monocular Node
+### Running Stereo-Intertial Node
 For a monocular input from topic `/camera/image_raw` run node ORB_SLAM3/Mono. You will need to provide the vocabulary file and a settings file. See the monocular examples above.
 
   ```
@@ -89,6 +89,16 @@ For a monocular input from topic `/camera/image_raw` run node ORB_SLAM3/Mono. Yo
 
 
 ​
+# 5. Rosbag Joining + Data Generation
+Ther Accel, Magnetometer data are on seperate topics, this script will join all the rosbag fragments and join thesse two topics for the final dataset
+    
+    ```
+    chmod +x build_ros.sh
+    ./build_ros.sh
+        ```
+Change the IN_PATH, OUT_PATH in bag_merge.sh. Will look at all the bags in the given folder.
+
+
 
 
 
