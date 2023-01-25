@@ -93,8 +93,8 @@ For a monocular input from topic `/camera/image_raw` run node ORB_SLAM3/Mono. Yo
 Ther Accel, Magnetometer data are on seperate topics, this script will join all the rosbag fragments and join thesse two topics for the final dataset
     
     
-    chmod +x build_ros.sh
-    ./build_ros.sh
+    chmod +x bag_merge.py
+    ./bag_merge.py
        
 Change the IN_PATH, OUT_PATH in bag_merge.sh. Will look at all the bags in the given folder.
 
