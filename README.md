@@ -75,89 +75,21 @@ and add at the end the following line. Replace PATH by the folder where you clon
 For a monocular input from topic `/camera/image_raw` run node ORB_SLAM3/Mono. You will need to provide the vocabulary file and a settings file. See the monocular examples above.
 
   ```
-  rosrun ORB_SLAM3 Mono PATH_TO_VOCABULARY PATH_TO_SETTINGS_FILE
+ rosrun ORB_SLAM3 Stereo_Inertial Vocabulary/ORBvoc.txt Examples/Stereo-Inertial/new.yaml false
   ```
-
-
-
-​
-
-97
-
-## Evaluation
-
-98
-
-
-
-```
-
-104
-
-​
-
-105
-
-# 6. ROS Examples
-
-106
-
-​
-
-107
-
-### Building the nodes for mono, mono-inertial, stereo, stereo-inertial and RGB-D
-
-108
-
-Tested with ROS Melodic and ubuntu 18.04.
-
-109
-
-​
-
-110
-
-1. Add the path including *Examples/ROS/ORB_SLAM3* to the ROS_PACKAGE_PATH environment variable. Open .bashrc file:
-
-111
-
-  ```
-
-112
-
-  gedit ~/.bashrc
-
-113
-
-  ```
-
-114
-
-and add at the end the following line. Replace PATH by the folder where you cloned ORB_SLAM3:
-
-115
-
-​no PATH_TO_VOCABULARY PATH_TO_SETTINGS_FILE [EQUALIZATION]	
-  ```
-
-
-Stereo= Intertial Node
-
-
-**Running ROS example:**  Open 3 tabs on the terminal and run the following command at each tab for a Stereo-Inertial configuration:
+  
   ```
   roscore
   ```
   
   ```
-  rosrun ORB_SLAM3 Stereo_Inertial Vocabulary/ORBvoc.txt Examples/Stereo-Inertial/EuRoC.yaml true
+ rosbag play --pause $BAG_NAME /camera/infra1/camera_rect_raw:=/camera/left/image_raw /camera/infra2/image_rect_raw:=/camera/right/image_raw /camera/accel/sample:=/imu
+
   ```
-  
-  ```
-  rosbag play --pause V1_02_medium.bag /cam0/image_raw:=/camera/left/image_raw /cam1/image_raw:=/camera/right/image_raw /imu0:=/imu
-  ```
-  
-Once ORB-SLAM3 has loaded the vocabulary, press space in the rosbag tab.
+
+
+​
+
+
 
 
