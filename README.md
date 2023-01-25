@@ -93,8 +93,7 @@ For a monocular input from topic `/camera/image_raw` run node ORB_SLAM3/Mono. Yo
 Ther Accel, Magnetometer data are on seperate topics, this script will join all the rosbag fragments and join thesse two topics for the final dataset
     
     
-    chmod +x bag_merge.py
-    ./bag_merge.py
+    pyhton3 bag_merge.py
        
 Change the IN_PATH, OUT_PATH in bag_merge.sh. Will look at all the bags in the given folder.
 
@@ -104,9 +103,7 @@ This script is for visualising the pose from KeyFrames.txt. In .yaml file use:
     
     System.SaveAtlasToFile: "map_total"
 
-
-    chmod +x pose.py
-    ./pose.py
+    python3 pose.py
        
 Mention setting of map in the file, filename
 
