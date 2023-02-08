@@ -117,3 +117,9 @@ Published Topics
     /orb_slam3/tracked_points, all key points contained in the sliding window
     /orb_slam3/all_points, all key points in the map
 
+# 8. Running using Launch File 
+ 
+In one terminal:
+roslaunch live_camera_node launch_file
+In another terminal:
+roslaunch orb_slam3_ros $file_stereo_inertial.launch
