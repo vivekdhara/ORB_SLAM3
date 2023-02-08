@@ -109,7 +109,9 @@ Mention setting of map in the file, filename
 500 Features with Segmentation Issues
 
 # 7. ROS Integration
-Published TOpics
+Published Topics
+
+
     /orb_slam3/camera_pose, left camera pose in world frame, published at camera rate
     /orb_slam3/tracking_image, processed image from the left camera with key points and status text
     /orb_slam3/tracked_points, all key points contained in the sliding window
