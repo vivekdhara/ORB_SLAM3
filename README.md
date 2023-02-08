@@ -118,7 +118,7 @@ Published Topics
     /orb_slam3/all_points, all key points in the map
 
 # 8. Running using Launch File 
-/
+Running using Launch files triggers rostopics
 
 In one terminal:
 ```
