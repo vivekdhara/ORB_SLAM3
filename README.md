@@ -128,3 +128,19 @@ In another terminal:
 ```
 roslaunch orb_slam3_ros $file_stereo_inertial.launch
 ```
+
+#9.Using Live ROS Wrapper:
+Run in a seperate terminal
+```
+python3 merge_topics.py
+```
+This will join linear,angular velocity and compute orientation passed as IMU type
+(can ignore orientation if angular velocity is also ignored)
+
+```
+roslaunch orb_slam_3 stereo_d435_inertial.launch
+
+```
+
+
+
