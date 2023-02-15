@@ -167,4 +167,4 @@ rosservice call /orb_slam_3/cam_pose_txt
 
 
 ```
-![alt text](https://github.com/vivekdhara/ORB_SLAM3/blob/master/Figure1.jpg.jpg?raw=true)
+![alt text](https://github.com/vivekdhara/ORB_SLAM3/blob/master/Figure_1.png?raw=true)
