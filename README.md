@@ -156,3 +156,10 @@ To save the Map:
 rosservice call /orb_slam_3/save_map
 
 ```
+
+To save Camera Pose
+
+```
+rosservice call /orb_slam_3/cam_pose_txt
+```
+
