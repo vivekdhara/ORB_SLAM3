@@ -142,14 +142,17 @@ roslaunch orb_slam_3 stereo_d435_inertial.launch
 
 ```
 # 10. Topics
-Subs: /camera/IMU
+Subs:
+```
+     /camera/IMU
      /camera/left_image
      /camera/right_image
-
+```
 Pubs:
+```
     /orb_slam3/camera_pose, left camera pose in world frame, published at camera rate
     /orb_slam3/all_points, all key points in the map
-
+```
 To save the Map:
 
 ```
