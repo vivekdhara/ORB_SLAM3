@@ -129,7 +129,7 @@ In another terminal:
 roslaunch orb_slam3_ros $file_stereo_inertial.launch
 ```
 
-#9.Using Live ROS Wrapper:
+# 9.Using Live ROS Wrapper:
 Run in a seperate terminal
 ```
 python3 merge_topics.py
@@ -141,6 +141,18 @@ This will join linear,angular velocity and compute orientation passed as IMU typ
 roslaunch orb_slam_3 stereo_d435_inertial.launch
 
 ```
+# 10. Topics
+Subs: /camera/IMU
+     /camera/left_image
+     /camera/right_image
 
+Pubs:
+    /orb_slam3/camera_pose, left camera pose in world frame, published at camera rate
+    /orb_slam3/all_points, all key points in the map
 
+To save the Map:
 
+```
+rosservice call /orb_slam_3/save_map
+
+```
