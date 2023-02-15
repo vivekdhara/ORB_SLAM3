@@ -164,5 +164,7 @@ To save Camera Pose
 
 ```
 rosservice call /orb_slam_3/cam_pose_txt
-```
 
+
+```
+![alt text](https://github.com/vivekdhara/ORB_SLAM3/blob/master/image.jpg?raw=true)
