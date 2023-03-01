@@ -81,7 +81,7 @@ This script is for visualising the pose from KeyFrames.txt. In .yaml file use:
     
     System.SaveAtlasToFile: "map_total"
 
-    python3 pose.p
+    python3 pose.py
 
 # 5. ROS Integration
 Published Topics
