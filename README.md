@@ -74,7 +74,7 @@ In case data isnt aligned and/or at different rates, this will interpolate accel
 ```
 python3 final_bag.py DIR_OF_ROSBAG
 ```
-
+Further orientation filters are optional
 
 # 4. Pose Visualisation
 This script is for visualising the pose from KeyFrames.txt. In .yaml file use: 
